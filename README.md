@@ -1,9 +1,6 @@
-```markdown
-# Instruções
-
-## Criando o namespace 'virtualizacao':
-
+## Criando Namespace
 ```bash
+
 kubectl create namespace virtualizacao
 ```
 
