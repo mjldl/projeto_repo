@@ -1,0 +1,21 @@
+auth:
+  rootPassword: ""
+  createDatabase: true
+  database: bitnami_wordpress
+  username: bn_wordpress
+  password: wordpress
+
+# Primary database configuration
+primary:
+  # Enable persistence using Persistent Volume Claims
+  persistence:
+    # If true, use a Persistent Volume Claim, If false, use emptyDir
+    enabled: true
+  # MySQL primary Pod security context
+  podSecurityContext:
+    enabled: false
+    fsGroup: 1001
+  # MySQL primary container security context
+  containerSecurityContext:
+    enabled: false
+    runAsUser: 1001
