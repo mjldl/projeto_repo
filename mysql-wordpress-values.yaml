@@ -1,0 +1,46 @@
+# MariaDB details
+mariadb:
+
+  # Use a new MariaDB database hosted in the cluster
+  enabled: false
+
+metrics:
+
+  # Enable Metrics
+  enabled: false
+
+# Service configuration
+service:
+  # Service type
+  type: ClusterIP
+
+persistence:
+  # Persistent Volume size
+  size: 1Gi
+
+# Admin email
+wordpressEmail: admin@wordpress.com
+
+
+# External database Details
+externalDatabase:
+  # Host of the external database
+  host: mysql-wordpress
+  # Database port
+  port: 3306
+  # Database user
+  user: bn_wordpress
+  # Database name
+  database: bitnami_wordpress
+  # Database password
+  password: wordpress_pass
+
+
+# Blog Name
+wordpressBlogName: Repo
+
+# Wordpress Password
+wordpressPassword: wordpress
+
+# Wordpress Username
+wordpressUsername: wordpress
